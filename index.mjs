@@ -15,7 +15,7 @@ const strURL = process.argv[2],
                         keepAlive: false,
                         error: (err, url) => rej(err),
                         // Called when there are no more requests
-                        done: spider => res(spider),
+                        done: () => res(spider),
                         //- All options are passed to `request` module, for example:
                         headers: { 'user-agent': 'node-spider' },
                         encoding: 'utf8'
@@ -25,6 +25,9 @@ const strURL = process.argv[2],
                     (i, elem) => {
                         const href = doc.$(elem).attr('href').split('#')[0],
                             strLocalURL = doc.resolve(href);
+                        if (!strLocalURL.startsWith(strURL)) {
+                            return;
+                        }
 
                         spider.queue(strLocalURL, handleRequest);
                     }
@@ -35,9 +38,8 @@ const strURL = process.argv[2],
 (async () => {
     try {
         const spiderResult = await pSpider(strURL);
+        console.log(spiderResult);
     } catch (err) {
         console.error(err);
     }
-
-    console.log(spiderResult);
 })();
