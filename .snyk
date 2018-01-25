@@ -1,6 +1,19 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.10.1
-ignore: {}
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:http-signature:20150122':
+    - node-spider > request > http-signature:
+        reason: None given
+        expires: '2018-02-24T19:15:18.756Z'
+  'npm:qs:20170213':
+    - node-spider > request > qs:
+        reason: None given
+        expires: '2018-02-24T19:15:18.756Z'
+  'npm:tunnel-agent:20170305':
+    - node-spider > request > tunnel-agent:
+        reason: None given
+        expires: '2018-02-24T19:15:18.756Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:request:20160119':
