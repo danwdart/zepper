@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kathiedart/zepper.git"
+    "url": "git+https://github.com/danwdart/zepper.git"
   },
   "keywords": [
     "page",
@@ -20,9 +20,9 @@
   "author": "Dan Dart <git@dandart.co.uk>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kathiedart/zepper/issues"
+    "url": "https://github.com/danwdart/zepper/issues"
   },
-  "homepage": "https://github.com/kathiedart/zepper#readme",
+  "homepage": "https://github.com/danwdart/zepper#readme",
   "dependencies": {
     "levenshtein": "^1.0.5",
     "node-fetch": "^1.7.3",
