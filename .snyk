@@ -22,3 +22,6 @@ patch:
   'npm:tunnel-agent:20170305':
     - node-spider > request > tunnel-agent:
         patched: '2018-06-26T07:16:41.159Z'
+  'npm:lodash:20180130':
+    - node-spider > cheerio > lodash:
+        patched: '2018-07-03T07:08:43.730Z'
