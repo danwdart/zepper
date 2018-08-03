@@ -1,5 +1,7 @@
 # Zepper
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/danwdart/zepper.svg)](https://greenkeeper.io/)
+
 ## Naming
 
 It's a page grouping tool. My stupid pun-based naming scheme is thus:
