@@ -25,9 +25,9 @@
   "homepage": "https://github.com/danwdart/zepper#readme",
   "dependencies": {
     "levenshtein": "^1.0.5",
-    "node-fetch": "^2.2.0",
+    "node-fetch": "^2.5.0",
     "node-spider": "^1.4.1",
-    "snyk": "^1.88.0"
+    "snyk": "^1.165.0"
   },
   "snyk": true
 }
