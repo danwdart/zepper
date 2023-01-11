@@ -34,3 +34,14 @@ patch:
         patched: '2022-10-05T15:42:58.437Z'
     - node-spider > request > hawk > cryptiles > boom > hoek:
         patched: '2022-10-05T15:42:58.437Z'
+  'npm:hawk:20160119':
+    - node-spider > request > hawk:
+        patched: '2023-01-11T12:13:53.751Z'
+  'npm:http-signature:20150122':
+    - node-spider > request > http-signature:
+        patched: '2023-01-11T12:13:53.751Z'
+  'npm:mime:20170907':
+    - node-spider > request > mime:
+        patched: '2023-01-11T12:13:53.751Z'
+    - node-spider > request > form-data > mime:
+        patched: '2023-01-11T12:13:53.751Z'
