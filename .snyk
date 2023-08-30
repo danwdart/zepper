@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.25.0
+version: v1.25.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:http-signature:20150122':
@@ -34,3 +34,18 @@ patch:
         patched: '2022-10-05T15:42:58.437Z'
     - node-spider > request > hawk > cryptiles > boom > hoek:
         patched: '2022-10-05T15:42:58.437Z'
+  'npm:hawk:20160119':
+    - node-spider > request > hawk:
+        patched: '2023-08-30T14:28:08.761Z'
+        id: 'npm:hawk:20160119'
+        path: node-spider > request > hawk
+  'npm:http-signature:20150122':
+    - node-spider > request > http-signature:
+        patched: '2023-08-30T14:28:08.761Z'
+        id: 'npm:http-signature:20150122'
+        path: node-spider > request > http-signature
+  'npm:mime:20170907':
+    - node-spider > request > form-data > mime:
+        patched: '2023-08-30T14:28:08.761Z'
+        id: 'npm:mime:20170907'
+        path: node-spider > request > form-data > mime
